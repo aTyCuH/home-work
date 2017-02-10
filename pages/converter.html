@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Тег select, атрибут form</title>
+    <link href="../css/style.css" type="text/css" rel="stylesheet"/>
+
+</head>
+<body>
+<form id="data" action="handler.php">
+</form>
+    <p>Сколькоу тебя гривен?:
+        <input id="first"></p>
+    <p>Какую валюту ты хочешь преобрести?
+
+    <select name="num" form="data">
+        <option input id="USD" value="USD">USD</option>
+        <option input id="EUR" value="EUR">EUR</option>
+    </select></p>
+        <p><button onclick="USD()">Конвертировать в USD</button></p>
+
+        <p><button onclick="EUR()">Конвертировать в EUR</button></p>
+
+        <p id="result"></p>
+
+        <script src="../scripts/converter.js"></script>
+
+        <p><a href="../index.html"><-Назад</a></p>
+
+</body>
+</html>
